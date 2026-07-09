@@ -3,7 +3,11 @@
 import { FormEvent, useState } from "react";
 import { SUPPORT_EMAIL } from "@/lib/site";
 
-export function ContactForm() {
+type ContactFormProps = {
+  variant?: "default" | "query";
+};
+
+export function ContactForm({ variant = "default" }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
@@ -43,6 +47,43 @@ export function ContactForm() {
     } finally {
       setSubmitting(false);
     }
+  }
+
+  if (variant === "query") {
+    return (
+      <form className="contact-form contact-form--query" onSubmit={handleSubmit}>
+        <div className="contact-form__row">
+          <label className="contact-form__field">
+            <span className="sr-only">Name</span>
+            <input type="text" name="name" placeholder="Enter Name" required />
+          </label>
+          <label className="contact-form__field">
+            <span className="sr-only">Email</span>
+            <input type="email" name="email" placeholder="Enter Your Email" required />
+          </label>
+          <label className="contact-form__field">
+            <span className="sr-only">Phone</span>
+            <input type="tel" name="phone" placeholder="Phone Number" />
+          </label>
+        </div>
+
+        <button type="submit" className="btn btn--submit" disabled={submitting}>
+          {submitting ? "Sending..." : "Submit"}
+        </button>
+
+        {submitted && (
+          <p className="contact-form__success" role="status">
+            Thank you! Your message has been sent to {SUPPORT_EMAIL}.
+          </p>
+        )}
+
+        {error && (
+          <p className="contact-form__error" role="alert">
+            {error}
+          </p>
+        )}
+      </form>
+    );
   }
 
   return (

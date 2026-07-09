@@ -64,10 +64,12 @@ export async function POST(request: Request) {
     message,
   ].join("\n");
 
+  const contactTo = process.env.CONTACT_TO?.trim() || SUPPORT_EMAIL;
+
   try {
     await transporter.sendMail({
       from: process.env.SMTP_FROM || smtpUser,
-      to: SUPPORT_EMAIL,
+      to: contactTo,
       replyTo: email,
       subject: emailSubject,
       text,

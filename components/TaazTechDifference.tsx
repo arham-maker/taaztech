@@ -58,12 +58,14 @@ function FlowArrow() {
   );
 }
 
+import { SITE_NAME } from "@/lib/site";
+
 export function TaazTechDifference() {
   return (
     <section className="difference" id="difference">
       <div className="container">
         <div className="difference__header">
-          <h2 className="difference__title">TaazTech Difference</h2>
+          <h2 className="difference__title">{SITE_NAME} Difference</h2>
           <h3 className="difference__subtitle">
             What Makes Us The Best App Development and Digital Marketing Agency?
           </h3>

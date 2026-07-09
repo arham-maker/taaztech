@@ -19,13 +19,11 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: "Top Digital Marketing & App Development Company in Dallas, TX",
-  description:
-    "TaazTech is a software development company and marketing agency in Dallas. Provides AI-empowered solutions to international and local brands",
+  description: `${SITE_NAME} is a software development company and marketing agency in Dallas. Provides AI-empowered solutions to international and local brands`,
   metadataBase: new URL(SITE_URL),
   openGraph: {
     title: "Top Digital Marketing & App Development Company in Dallas, TX",
-    description:
-      "TaazTech is a software development company and marketing agency in Dallas. Provides AI-empowered solutions to international and local brands",
+    description: `${SITE_NAME} is a software development company and marketing agency in Dallas. Provides AI-empowered solutions to international and local brands`,
     url: SITE_URL,
     siteName: SITE_NAME,
     locale: "en_US",

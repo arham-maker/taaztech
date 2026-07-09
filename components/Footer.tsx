@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { footerQuickLinks, footerServicesIntro, socialLinks } from "@/lib/data";
 import { logos } from "@/lib/images";
+import { SITE_NAME } from "@/lib/site";
 
 function SocialIcon({ type }: { type: string }) {
   if (type === "linkedin") {
@@ -40,7 +41,7 @@ export function Footer() {
           <Link href="/">
             <Image
               src={logos.footer}
-              alt="TaazTech"
+              alt={SITE_NAME}
               width={160}
               height={42}
             />
@@ -88,7 +89,7 @@ export function Footer() {
 
       <div className="container footer__bottom">
         <p>
-          <span id="copyright-text">© 2026 | All rights reserved by TaazTech</span>
+          <span id="copyright-text">© 2026 | All rights reserved by {SITE_NAME}</span>
         </p>
         <ul className="footer__legal">
           <li>

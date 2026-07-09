@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { navLinks } from "@/lib/data";
 import { logos } from "@/lib/images";
+import { SITE_NAME } from "@/lib/site";
 import { useStickyHeader } from "@/hooks/useStickyHeader";
 
 export function Header() {
@@ -20,10 +21,10 @@ export function Header() {
       className={`site-header ${scrolled ? "site-header--scrolled" : "site-header--top"}`}
     >
       <div className="site-header__inner">
-        <Link href="/" className="site-header__logo" aria-label="TaazTech home">
+        <Link href="/" className="site-header__logo" aria-label={`${SITE_NAME} home`}>
           <Image
             src={logos.white}
-            alt="TaazTech"
+            alt={SITE_NAME}
             width={240}
             height={63}
             className="site-header__logo-white"
@@ -31,7 +32,7 @@ export function Header() {
           />
           <Image
             src={logos.black}
-            alt="TaazTech"
+            alt={SITE_NAME}
             width={240}
             height={63}
             className="site-header__logo-black"
@@ -83,15 +84,7 @@ export function Header() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link href="/contact-us" onClick={() => setMobileOpen(false)}>
-                Get In Touch
-              </Link>
-            </li>
           </ul>
-          <a href="tel:8178757777" className="mobile-menu__phone">
-            817.875.7777
-          </a>
         </div>
       )}
     </header>

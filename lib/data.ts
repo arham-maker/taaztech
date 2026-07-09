@@ -1,11 +1,12 @@
 import { img } from "./images";
+import { SITE_NAME } from "./site";
 
 export const navLinks = [
-  { label: "App Development", href: "#services" },
-  { label: "Web Development", href: "#services" },
-  { label: "SEO", href: "#services" },
-  { label: "PPC", href: "#services" },
-  { label: "SEM", href: "#services" },
+  { label: "App Development", href: "/services/mobile-app-development" },
+  { label: "Web Development", href: "/services/website-design-and-development" },
+  { label: "SEO", href: "/services/seo-services" },
+  { label: "PPC", href: "/services/ppc" },
+  { label: "SEM", href: "/services/sem-services" },
 ];
 
 export const clientLogos = [
@@ -118,7 +119,7 @@ export const faqs = [
       "We deliver apps efficiently without compromising quality. Typical timelines depend on project complexity, platform (iOS, Android, web), and features required.",
   },
   {
-    question: "Can TaazTech integrate AI features into my software or business tools?",
+    question: `Can ${SITE_NAME} integrate AI features into my software or business tools?`,
     answer:
       "Yes. We specialize in AI-powered solutions for automation, analytics, and smarter business processes. Your app or software can leverage AI for personalized experiences and better performance.",
   },
@@ -186,16 +187,15 @@ export const stats = [
 ];
 
 export const footerQuickLinks = [
-  { label: "App Development", href: "#services" },
-  { label: "Web Development", href: "#services" },
-  { label: "SEO", href: "#services" },
-  { label: "PPC", href: "#services" },
-  { label: "SEM", href: "#services" },
+  { label: "App Development", href: "/services/mobile-app-development" },
+  { label: "Web Development", href: "/services/website-design-and-development" },
+  { label: "SEO", href: "/services/seo-services" },
+  { label: "PPC", href: "/services/ppc" },
+  { label: "SEM", href: "/services/sem-services" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 
-export const footerServicesIntro =
-  "TaazTech delivers end-to-end digital solutions—from custom apps and web platforms to search marketing—that help businesses innovate faster, scale smarter, and grow with confidence.";
+export const footerServicesIntro = `${SITE_NAME} delivers end-to-end digital solutions—from custom apps and web platforms to search marketing—that help businesses innovate faster, scale smarter, and grow with confidence.`;
 
 export const socialLinks = [
   { label: "LinkedIn", href: "#", icon: "linkedin" },
