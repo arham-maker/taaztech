@@ -31,13 +31,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/images/2025/03/cropped-crossway-watermark-logo-32x32.png", sizes: "32x32" },
+      { url: "/images/2025/03/favicon-32x32.png", sizes: "32x32" },
       {
-        url: "/images/2025/03/cropped-crossway-watermark-logo-192x192.png",
+        url: "/images/2025/03/favicon-192x192.png",
         sizes: "192x192",
       },
     ],
-    apple: "/images/2025/03/cropped-crossway-watermark-logo-180x180.png",
+    apple: "/images/2025/03/apple-touch-icon.png",
   },
 };
 

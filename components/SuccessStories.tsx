@@ -56,9 +56,6 @@ export function SuccessStories() {
                   <div className="expanding-card__info">
                     <h4 className="expanding-card__title">{story.title}</h4>
                     <p className="expanding-card__description">{story.description}</p>
-                    <Link href={story.href} className="expanding-card__link">
-                      Explore Case Study
-                    </Link>
                   </div>
                 </div>
               </article>

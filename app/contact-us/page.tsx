@@ -13,9 +13,6 @@ export const metadata: Metadata = {
 export default function ContactUsPage() {
   return (
     <>
-      <a href="#main-content" className="skip-link">
-        Skip to content
-      </a>
       <Header />
       <main id="main-content">
         <section className="contact-page-hero">

@@ -12,9 +12,6 @@ export const metadata: Metadata = {
 export default function MobileAppDevelopmentRoute() {
   return (
     <>
-      <a href="#main-content" className="skip-link">
-        Skip to content
-      </a>
       <Header />
       <main id="main-content">
         <MobileAppDevelopmentPage />

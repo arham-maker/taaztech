@@ -196,10 +196,3 @@ export const footerQuickLinks = [
 ];
 
 export const footerServicesIntro = `${SITE_NAME} delivers end-to-end digital solutions—from custom apps and web platforms to search marketing—that help businesses innovate faster, scale smarter, and grow with confidence.`;
-
-export const socialLinks = [
-  { label: "LinkedIn", href: "#", icon: "linkedin" },
-  { label: "X", href: "#", icon: "twitter" },
-  { label: "Instagram", href: "#", icon: "instagram" },
-  { label: "Facebook", href: "#", icon: "facebook" },
-];
